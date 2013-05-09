@@ -1,12 +1,11 @@
 ## terms
 
-
-
 ## ndarry
 
 > An `ndarray` is a (usually fixed-size) multidimensional container of items of the same type and size. The number of dimensions and items in an array is defined by its `shape`, which is a `tuple` of N positive integers that specify the sizes of each dimension. The type of items in the array is specified by a separate data-type object (dtype), one of which is associated with each ndarray.
 
 ## ufunc
+
 NumPy's ufuncs currently do not support sparse matrices. And have even less support binary operation on sparse dense combinations. The proposed remedy:
 
 
@@ -17,15 +16,6 @@ NumPy's ufuncs currently do not support sparse matrices. And have even less supp
 ## Unary ufuncs
 
 A unary `ufunc` operating on a `spmatrix` should return a spmatrix. This is tested with `test_unary_ufuncs` in the test suite. There is an exception to this `numpy.modf` and `numpy.frex` which return two spmatrix objects.
-
-Unary ufuncs: 
-TODO  
-...
-
-Unary with two ouputs:  
-
-    modf
-    frex
 
 ## Binary ufuncs
 
