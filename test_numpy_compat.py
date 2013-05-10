@@ -20,7 +20,6 @@ def test_unary_ufuncs():
         if type(attr) == np.ufunc and attr.nin == 1:
             unary_ufunc.append(attr)
 
-    # ufuncs with one output
     for ufunc in unary_ufunc:
         # does the ufunc work?
         try:
