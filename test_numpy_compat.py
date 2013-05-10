@@ -47,5 +47,9 @@ def test_unary_ufuncs():
             # Equalit check.
             assert_almost_equal(sp_val.toarray(), val)
 
+def test_binary_ufuncs():
+    """ Test binary ufuncs behave as defined in the specification."""
+    pass
+
 if __name__ == '__main__':
     run_module_suite()
